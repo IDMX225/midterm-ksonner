@@ -9,35 +9,51 @@
 body{
     font-family: Iansui;
     background-color: #FAAF90;
-    color: #8BABF1;
+    color: #38486B;
 }
 
 h1, h2, h3, h4, h5, h6{
     text-align: center;
 }
 
+
+
 header{
+    border: 1rem double #B3C7F7;
+    border-radius: 3rem;
     text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 40rem;
+
 }
 
-header, img{
-    width: 30rem;
-    text-align: center;
+header img{
+    width: 20rem;
 }
+
 
 #bio{
-    text-align: center;
+    text-align: left;
+    font-size: 20px;
+    background-color: #B3C7F7;
+    border:.5rem solid #38486B;
+    margin: 20px;
 }
 
 
 #bio img{
     width: 20rem;
+    text-align: center;
 }
 
-#bio{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+#bio h2{
+    font-size: 40px;
+    text-decoration: underline;
+    
 }
+
+
 
 
 footer{
@@ -66,26 +82,20 @@ footer{
 }
 
 
-#reviews h3{
-    grid-column: 1/-1;
-    text-decoration: underline;
-}
-
-
 
 /* desktop screen size */ 
 @media screen and (min-width: 80em){
 
-    figure{
+    #bio figure{
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1fr 2fr;
     }
 
-    figure img{
+    #bio figure img{
         width: 100%
     }
 
-    figcaption{
+    #bio figcaption{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -95,7 +105,25 @@ footer{
     #reviews{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        text-align: center;
+        
     }
 
+    #review h3{
+        grid-column: 1/-1;
+    }
+
+    #reviews figure img{
+        width: 100%;
+    }
+
+   #review figure{
+        display: block;
+    }
+
+    #bio figure {
+        display: flex;
+    }
+    
+
+   
 }
